@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family:Noto Serif JP;
+
+}
+header{
+    
+    background-image: url(C:/Users/USER/Desktop/website/IMG/l.jpg);
+    background-size:contain;
+    height: 500px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.sidebar{
+    position: fixed;
+    top:350px;
+    right: -270px;
+    width : 250px;
+    height: 100%;
+    background:blueviolet;
+    transition: all .5s ease;
+    
+}
+.sidebar h2{
+    font-size:22px;
+    color:green;
+    text-align:center;
+    line-height:30px;
+    background:whitesmoke;
+    user-select:none;
+
+}
+.sidebar ul a{
+    display:block;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    font-size: 20px;
+    color:whitesmoke;
+    padding-right:40px;
+    box-sizing:border-box;
+    border-top:1px solid burlywood;
+    border-bottom:1px solid snow;
+   transition: .4s;
+}
+ul li:hover a{
+    padding-right:50px;
+
+}
+.sidebar ul a i{
+    margin-left:19px;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position:absolute;
+    cursor:pointer;
+    background:yellow;
+    border-radius:5px;
+}
+label #btn{
+    right:40px;
+    top:350px;
+    font-size: 35px;
+    color:blueviolet;
+    padding: 6px 12px;
+    transition:all .5s ease;
+
+}
+label #cancel{
+    z-index:1111;
+    right:-250px;
+    top:350px;
+    font-size:30px;
+    color:blueviolet;
+    padding:4px 9px;
+    transition:all .5s ease;
+}
+#check:checked ~.sidebar{
+    right:0;
+}
+#check:checked ~label #btn{
+    right:250px;
+    opacity:0;
+    pointer-events:none;
+
+}
+#check:checked ~label #cancel{
+    right: 250px
+}
+
+.l{
+    float: left;
+    width: 150px;
+    height: 100px;
+}
+.title{
+    
+    top:50;
+    right: 50%;
+
+}
+.title h1{
+    text-align: center;
+    color:blueviolet;
+    font-size:28px;
+}
+.button{
+    top:60;
+    left: 50%;
+
+}
+.btn{
+    border: 1px solid blueviolet;
+    padding:10px 30px;
+    color:chocolate;
+
+}
+.btn:hover{
+    background-color: yellow;
+    color:red;
+}
